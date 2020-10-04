@@ -25,7 +25,8 @@ const Header = () => {
         </button>
       </div>
       {toggled && (
-        <div id="menu" className="block">
+      <div id="menu" className="block">
+        <a href="https://www.google.com/">
           <button
             type="button"
             className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
@@ -38,9 +39,9 @@ const Header = () => {
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
-            <a href="https://www.google.com/">Exist</a>
           </button>
-        </div>
+        </a>
+      </div>
       )}
     </nav>
   )
