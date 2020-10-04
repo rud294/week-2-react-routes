@@ -3,8 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import Header from './header'
 
 const Profile = () => {
-  const { username } = useParams()
-  console.log(username)
+  const { user } = useParams()
   return (
     <div>
       <Header />
@@ -13,6 +12,7 @@ const Profile = () => {
           <div id="title">Profile</div>
           <Link to="/dashboard">   Go To Root</Link>
           <Link to="/dashboard/main">   Go To Main</Link>
+          <div id="username">{ user }</div>
         </div>
       </div>
     </div>
