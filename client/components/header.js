@@ -25,8 +25,8 @@ const Header = () => {
         </button>
       </div>
       {toggled && (
-        // <div id="menu" className="block">
-        <a id="menu" href="https://www.google.com/">
+      <div id="menu" className="block">
+        <a href="https://www.google.com/">
           <button
             type="button"
             className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
@@ -41,7 +41,7 @@ const Header = () => {
             </svg>
           </button>
         </a>
-        // </div>
+      </div>
       )}
     </nav>
   )
